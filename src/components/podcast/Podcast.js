@@ -28,7 +28,7 @@ const StyleContent = {
 };
 const StyleFrame = {
     width: '40%',
-    aspectRatio: 1,
+    aspectRatio: '1.5 / 1',
     marginLeft: 'auto',
     marginRight: 'auto',
     '@media screen and (max-width: 1300px)': {
