@@ -12,10 +12,14 @@ const StyleText = {
   color: 'text.highlight',
 };
 const StyleBox = {
-  width: '40%',
+  width: '25%',
   marginBottom: '2%',
   marginInline: 'auto',
   padding: '1%',
+  textAlign: 'justify',
+  '@media screen and (max-width: 1800px)': {
+    width: '40%',
+  },
   '@media screen and (max-width: 1300px)': {
     width: '60%',
   },

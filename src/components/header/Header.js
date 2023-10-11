@@ -17,7 +17,7 @@ const Style1 = {
 const Style2 = {
     width: '30%',
     display: 'flex',
-    justifyContent: 'center',
+    justifyContent: 'space-between',
     '@media screen and (max-width: 1300px)': {
       width: '60%',
     },

@@ -31,6 +31,7 @@ const StyleList = {
     flexWrap: 'wrap',
     justifyContent: 'space-between',
     overflowY: 'auto',
+    textAlign: 'left',
     '@media screen and (max-width: 750px)': {
         width: '80%',
         justifyContent: 'center',
@@ -39,9 +40,8 @@ const StyleList = {
 
 function Tales() {
     return (
-        <Box id='relatos'
-            sx={StyleSection}>
-            <SectionTitle section={'Relatos'} primaryStyle={false}/>
+        <Box id='relatos'sx={StyleSection}>
+            <SectionTitle section={'Relatos'}/>
             <Box sx={StyleContent}>
                 <Box sx={StyleList}>
                     <TaleList />

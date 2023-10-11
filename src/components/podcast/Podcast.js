@@ -27,10 +27,14 @@ const StyleContent = {
     flexDirection: 'column',
 };
 const StyleFrame = {
-    width: '40%',
+    width: '25%',
     aspectRatio: '1.5 / 1',
     marginLeft: 'auto',
     marginRight: 'auto',
+
+    '@media screen and (max-width: 1800px)': {
+        width: '40%',
+    },
     '@media screen and (max-width: 1300px)': {
         width: '60%',
         aspectRatio: 2,
@@ -50,7 +54,7 @@ const StyleText = {
     flexGrow: 1,
     display: 'flex',
     flexDirection: 'column',
-    justifyContent: 'flex-end',
+    justifyContent: 'center',
     padding: "10%"
 }
 
@@ -59,8 +63,8 @@ function Podcast() {
     const goToIvoox = () => {
         window.open('https://go.ivoox.com/sq/2107328')
     }
-    const wm750 = useMediaQuery({ minWidth: 750, minHeight: 750 })
-    const wm300 = useMediaQuery({ minWidth: 300, minHeight: 300 })
+    const wm750 = useMediaQuery({ minWidth: 750 })
+    const wm300 = useMediaQuery({ minWidth: 300 })
     const wl750 = useMediaQuery({ maxWidth: 750 })
     const wl300 = useMediaQuery({ maxWidth: 300 })
 
