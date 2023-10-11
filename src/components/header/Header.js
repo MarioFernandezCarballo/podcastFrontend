@@ -18,11 +18,14 @@ const Style2 = {
     width: '30%',
     display: 'flex',
     justifyContent: 'space-between',
+    '@media screen and (max-width: 1800px)': {
+      width: '40%',
+    },
     '@media screen and (max-width: 1300px)': {
       width: '60%',
     },
     '@media screen and (max-width: 600px)': {
-      width: '90%',
+      width: '80%',
     },
 }
 

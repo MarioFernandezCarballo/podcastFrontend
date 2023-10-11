@@ -37,7 +37,8 @@ const StyleText = {
     justifyContent: 'flex-end',
     padding: "10%",
     paddingTop: '0%',
-    paddingBottom: '0%'
+    paddingBottom: '0%',
+    cursor: 'pointer',
 }
 
 function About() {

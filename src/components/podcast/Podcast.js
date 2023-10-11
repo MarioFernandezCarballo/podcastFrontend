@@ -18,6 +18,9 @@ const StyleSection = {
     '@media screen and (max-height: 1000px)': {
         height: '83vh',
     },
+    '@media screen and (orientation:landscape)': {
+        height: 'auto',
+    }
 };
 const StyleContent = {
     width: 1,
@@ -39,10 +42,9 @@ const StyleFrame = {
         width: '60%',
         aspectRatio: 2,
     },
-    '@media screen and (max-height: 1000px)': {
-        width: '60%',
-        aspectRatio: 2,
-    }, 
+    '@media screen and (orientation:landscape)': {
+        marginBottom: '5%',
+    }
 }
 const StyleText = {
     fontWeight: 200,
@@ -55,7 +57,8 @@ const StyleText = {
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
-    padding: "10%"
+    padding: "10%",
+    cursor: 'pointer',
 }
 
 
@@ -73,6 +76,8 @@ function Podcast() {
             <Box sx={StyleContent}>
                 {wm300 && <SectionText url={'podcast-text/1'}/>}
                 {wl300 && <SectionText url={'podcast-text/3'}/>}
+                {wm300 && <SectionText url={'podcast-text/2'}/>}
+                {wl300 && <SectionText url={'podcast-text/4'}/>}
                 {wm750 && <Box sx={StyleFrame}>   
                         <iframe 
                             src="https://www.ivoox.com/player_es_podcast_2107328_zp_1.html?c1=838383" 
@@ -84,8 +89,6 @@ function Podcast() {
                             loading="lazy"
                         />
                     </Box>}
-                {wm300 && <SectionText url={'podcast-text/2'}/>}
-                {wl300 && <SectionText url={'podcast-text/4'}/>}
                 {wl750 && <Link 
                     variant='overline' 
                     underline='none'

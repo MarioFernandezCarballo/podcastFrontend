@@ -2,9 +2,6 @@
 import { Box, Link } from "@mui/material";
 
 const StyleLink = {
-    height: '90%',
-    width: '30%',
-    aspectRatio: 1,
     marginBlock: 'auto',
     display: 'flex',
     flexDirection: 'column',

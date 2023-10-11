@@ -26,12 +26,6 @@ const StyleBox = {
   '@media screen and (max-width: 600px)': {
     width: '80%',
   },
-  '@media screen and (max-height: 1000px)': {
-    width: '60%',
-  },  
-  '@media screen and (max-height: 750px)': {
-    width: '80%',
-  },  
 
 }
 
