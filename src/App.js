@@ -34,7 +34,7 @@ function App() {
           <Podcast/>
           <Tales/>
           <About/>
-          <Footer/>
+          <Footer isDark={isDarkMode}/>
           <NightModeButton functionToExecute={toggleDarkMode}/>
           <ScrollToTopButton />
         </div>

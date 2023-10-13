@@ -25,16 +25,28 @@ const StyleContent = {
     alignItems: 'center'
 };
 const StyleList = {
-    width: '60%',
+    width: '30%',
     display: 'flex',
     flexDirection: 'row',
     flexWrap: 'wrap',
+    columnGap: '10%',
+    rowGap: '5%',
     justifyContent: 'space-between',
     overflowY: 'auto',
+    '::-webkit-scrollbar': {
+        display: 'none'
+    },
+    scrollbarWidth: 'none',
     textAlign: 'left',
+    '@media screen and (max-width: 1800px)': {
+      width: '40%',
+    },
+    '@media screen and (max-width: 1300px)': {
+      width: '60%',
+    },
     '@media screen and (max-width: 750px)': {
-        width: '80%',
-        justifyContent: 'center',
+      width: '80%',
+      justifyContent: 'center'
     },
 }
 

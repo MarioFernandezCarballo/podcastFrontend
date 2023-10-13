@@ -8,7 +8,7 @@ import { useGetApiTalePDF } from '../Hooks';
 
 const StyleLink = {
     marginBottom: '2%',
-    width: '30%',
+    width: '40%',
     '@media screen and (max-width: 1000px)': {
         width: '40%',
     },
