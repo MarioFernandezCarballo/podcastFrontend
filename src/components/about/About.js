@@ -16,6 +16,9 @@ const StyleSection = {
     '@media screen and (max-width: 750px)': {
         height: 'auto',
     },
+    '@media screen and (orientation:landscape) and (max-width: 1350px)': {
+        height: 'auto',
+    }
 };
 const StyleContent = {
     width: 1,

@@ -4,6 +4,7 @@ import { Box, Link } from '@mui/material';
 import { useMediaQuery } from 'react-responsive';
 //Components
 import SectionText from '../SectionText';
+import PodcastLogo from './PodcastLogo';
 
 const StyleSection = {
     width: 1,
@@ -18,7 +19,7 @@ const StyleSection = {
     '@media screen and (max-height: 1000px)': {
         height: '83vh',
     },
-    '@media screen and (orientation:landscape)': {
+    '@media screen and (orientation:landscape) and (max-width: 1000px)': {
         height: 'auto',
     }
 };
@@ -89,7 +90,9 @@ function Podcast() {
                             loading="lazy"
                         />
                     </Box>}
-                {wl750 && <Link 
+                {wl750 && <PodcastLogo/>}
+                {wl750 && 
+                <Link 
                     variant='overline' 
                     underline='none'
                     onClick={goToIvoox}
@@ -101,3 +104,5 @@ function Podcast() {
   }
   
   export default Podcast;
+
+  
